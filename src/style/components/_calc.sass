@@ -1,2 +1,133 @@
 .calc
   min-height: 845px
+  &__title
+    font-size: 40px
+    line-height: 48px
+    text-align: center
+    color: $black
+    width: 830px
+    margin: 0 auto
+    span
+      color: $pink
+  &__content
+    margin-top: 110px
+    display: flex
+    justify-content: space-between
+  &__calc-box
+    width: 535px
+  &__range-title
+    font-weight: 600
+    font-size: 18px
+    line-height: 140%
+    color: #768487
+  &__range-box
+    position: relative
+    margin-top: 25px
+  &__range-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 534px
+    height: 31px
+    border: 1px solid #7b5cbd7e
+    border-radius: 63px
+  &__dots
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate3d(-50%, -50%, 0)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 471px
+  &__dot
+    width: 6px
+    height: 6px
+    background: #7A5CBD
+    border-radius: 50%
+  &__captions
+    display: flex
+    justify-content: space-between
+    width: 97%
+    margin: 13px auto 0 auto
+    &_first
+      margin-bottom: 45px
+    &_second
+      width: 89%
+      margin-bottom: 20px
+  &__caption
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: rgba(118, 132, 135, 0.7)
+  &__text
+    font-size: 14px
+    line-height: 18px
+    color: #828282
+    width: 101%
+  &__result
+    margin-top: 20px
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    color: #768487
+    span
+      font-weight: bold
+      font-size: 40px
+      line-height: 48px
+      color: #7A5CBD
+  &__btn
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFD02C 100%)
+    border: 2px solid #FFD02C
+    box-sizing: border-box
+    box-shadow: 0px 10px 30px rgba(255, 204, 71, 0.5)
+    border-radius: 30px
+    font-weight: bold
+    font-size: 14px
+    line-height: 17px
+    color: $black
+    text-transform: uppercase
+    width: 300px
+    text-align: center
+    padding: 18px 0px
+    margin: 65px auto 0 auto
+    display: block
+  &__range
+    background: $white
+    box-shadow: 1px 3px 14px rgba(50, 54, 72, 0.13)
+    width: 506px
+    height: 10px
+    outline: none
+    border-radius: 5px
+    -webkit-appearance: none
+    &::-webkit-slider-thumb
+      -webkit-appearance: none
+      width: 39px
+      height: 39px
+      cursor: pointer
+      background: #FFFFFF
+      box-shadow: 1px 3px 6px rgba(50, 54, 72, 0.36)
+      border-radius: 50%
+      background-image: url("../img/icons/range-dot.png")
+      background-position: center center
+      background-repeat: no-repeat
+    &::-moz-range-thumb
+      width: 39px
+      height: 39px
+      cursor: pointer
+      background: #FFFFFF
+      box-shadow: 1px 3px 6px rgba(50, 54, 72, 0.36)
+      border-radius: 50%
+      background-image: url("../img/icons/range-dot.png")
+      background-position: center center
+      background-repeat: no-repeat
+    &::-ms-thumb
+      width: 39px
+      height: 39px
+      cursor: pointer
+      background: #FFFFFF
+      box-shadow: 1px 3px 6px rgba(50, 54, 72, 0.36)
+      border-radius: 50%
+      background-image: url("../img/icons/range-dot.png")
+      background-position: center center
+      background-repeat: no-repeat
