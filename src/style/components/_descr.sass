@@ -1,0 +1,58 @@
+.descr
+  min-height: 1000px
+  @include bg
+  background-image: url("../img/bgs/descr-bg.jpg")
+  padding-bottom: 147px 
+  overflow-x: hidden
+  &__title
+    margin-top: 64px
+    font-weight: bold
+    font-size: 40px
+    line-height: 120%
+    color: $black
+    span
+      color: $pink
+  &__subtitle
+    margin-top: 27px
+    display: flex
+    justify-content: center
+    align-items: center
+  &__subtitle-text
+    font-weight: 600
+    font-size: 26px
+    line-height: 130%
+    color: $purple
+    margin-right: 30px
+    span
+      font-weight: bold
+      display: inline-block
+      margin: 0 15px
+      font-size: 40px
+  &__subtitle-text-box
+    width: 290px
+    background-color: $white
+    border-radius: 10px
+    padding: 14px 20px
+    position: relative
+  &__subtitle-textmark
+    font-size: 14px
+    line-height: 24px
+    color: $grey
+    margin-bottom: 0px
+    &_purple
+      font-style: italic
+      font-size: 12px
+      margin-bottom: 0
+      color: $purple
+  &__subtitle-triangle
+    position: absolute
+    left: -14px
+    top: 50%
+    transform: translateY(-50%)
+  &__form
+    position: relative
+    margin-top: 25px
+  &__book-img
+    position: absolute
+    left: 600px
+    top: 0
