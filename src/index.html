@@ -9,13 +9,13 @@
     <section class="descr">
       <div class="container">
         <header class="header">
-          <img src="./img/logo.png" alt="" class="header__icon" />
+          <img src="./img/logo.png" alt="Лого" class="header__icon" />
           <div class="header__phone-box">
             <div class="header__phone-icon">
-              <img src="./img/icons/header-phone.png" alt="" />
+              <img src="./img/icons/header-phone.png" alt="Телефон" />
             </div>
-            <a class="header__phone" href="tel:+79172222283"
-              >8 (800) 000 00 00</a
+            <a class="header__phone" href="tel:+74999387768"
+              >8 (499) 938 77 68</a
             >
           </div>
         </header>
@@ -39,7 +39,7 @@
             <img
               class="descr__subtitle-triangle"
               src="./img/icons/triangle.png"
-              alt=""
+              alt="Треугольник"
             />
           </div>
         </div>
@@ -50,65 +50,102 @@
               Оставьте заявку на презентацию франшизы и финансовую модель
             </h3>
             <div class="form__input-box">
-              <img
-                src="./img/icons/form/name.png"
-                alt=""
+              <input placeholder="Ваше имя" type="text" class="form__input" data-type="name" />
+              <svg
                 class="form__icon"
-              /><input placeholder="Ваше имя" type="text" class="form__input" />
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 17C1 14 5 14 7 12C8 11 5 11 5 6C5 2.667 6.333 1 9 1C11.667 1 13 2.667 13 6C13 11 10 11 11 12C13 14 17 14 17 17"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div data-error-label="name" class="form__error-text invisible"></div>
             </div>
             <div class="form__input-box">
-              <img
-                src="./img/icons/form/phone.png"
-                alt=""
-                class="form__icon"
-              /><input
+              <input
                 placeholder="Ваш телефон"
                 type="text"
                 class="form__input"
+                data-type="phone"
               />
+              <svg
+                class="form__icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.7408 16.4036L13.3055 13.8389C13.6481 13.4963 14.1871 13.4486 14.5846 13.7258L18.1353 16.2023C18.6459 16.5584 18.7106 17.2894 18.2704 17.7296L17.8841 18.1159C17.1739 18.8261 16.1547 19.1338 15.1986 18.826C13.1336 18.1613 9.37672 16.6179 6.26175 13.503C3.14678 10.388 1.6034 6.63109 0.938706 4.56614C0.630928 3.61 0.938591 2.59085 1.64885 1.88059L2.03512 1.49432C2.47529 1.05415 3.20634 1.11879 3.56244 1.62937L6.03888 5.18011C6.3161 5.57758 6.26844 6.11661 5.92578 6.45927L3.36113 9.02392"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div data-error-label="phone" class="form__error-text invisible"></div>
             </div>
             <div class="form__input-box">
-              <img
-                src="./img/icons/form/envelope.png"
-                alt=""
+              <input placeholder="Ваш e-mail" type="text" class="form__input" data-type="email" />
+              <svg
                 class="form__icon form__icon_envelope"
-              /><input
-                placeholder="Ваш e-mail"
-                type="text"
-                class="form__input"
-              />
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 6L12 14L21 6" stroke="#768487" />
+                <rect
+                  x="2"
+                  y="5"
+                  width="20"
+                  height="14"
+                  rx="3"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div data-error-label="email" class="form__error-text invisible">- Неверное мыло</div>
             </div>
             <div class="form__btn-box">
               <button class="form__btn">Получить документацию</button
-              ><img src="./img/icons/file/pdf-file.png" alt="" />
+              ><img src="./img/icons/file/pdf-file.png" alt="Файл" />
             </div>
             <p class="form__text">
               Нажимая на кнопку, Вы даете согласие на обработку персональных
-              данных и соглашаетесь с <span>политикой конфиденциальности</span>
+              данных и соглашаетесь с
+              <span class="policy">политикой конфиденциальности</span>
             </p>
           </form>
-          <img src="./img/book.png" alt="" class="descr__book-img" />
+          <img src="./img/book.png" alt="Книга" class="descr__book-img" />
         </div>
       </div>
     </section>
 
     <section class="offer">
-      <img class="offer__bg-img" src="./img/bgs/descr-text-bg.png" alt="" />
+      <img class="offer__bg-img" src="./img/bgs/descr-text-bg.png" alt="Задний фон" />
       <div class="container">
         <div class="offer__list">
           <div class="offer__item">
-            <img src="./img/coins.png" alt="" class="offer__item-img" />
+            <img src="./img/coins.png" alt="Монеты" class="offer__item-img" />
             <p class="offer__item-text">
               Ежемесячная выручка <br />
               от 900 000 рублей
             </p>
           </div>
           <div class="offer__item">
-            <img src="./img/board.png" alt="" class="offer__item-img" />
+            <img src="./img/board.png" alt="Доска" class="offer__item-img" />
             <p class="offer__item-text">От 10 клиентов каждый месяц</p>
           </div>
           <div class="offer__item">
-            <img src="./img/hourglass.png" alt="" class="offer__item-img" />
+            <img src="./img/hourglass.png" alt="Часы" class="offer__item-img" />
             <p class="offer__item-text">
               Окупаемость <br />
               от 3 до 7 месяцев
@@ -124,22 +161,22 @@
         </p>
         <div class="offer__check-list">
           <div class="offer__check-item">
-            <img src="./img/icons/check.png" alt="" class="offer__check-img" />
+            <img src="./img/icons/check.png" alt="Галочка" class="offer__check-img" />
             <p class="offer__check-text">Оформляем банкротство</p>
           </div>
           <div class="offer__check-item">
-            <img src="./img/icons/check.png" alt="" class="offer__check-img" />
+            <img src="./img/icons/check.png" alt="Галочка" class="offer__check-img" />
             <p class="offer__check-text">Сопровождаем в суде</p>
           </div>
           <div class="offer__check-item">
-            <img src="./img/icons/check.png" alt="" class="offer__check-img" />
+            <img src="./img/icons/check.png" alt="Галочка" class="offer__check-img" />
             <p class="offer__check-text">
               Помогаем во взыскании <br />
               задолженностей
             </p>
           </div>
         </div>
-        <img src="./img/chat.png" alt="" class="offer__discuss-img" />
+        <img src="./img/chat.png" alt="Разговор" class="offer__discuss-img" />
       </div>
     </section>
 
@@ -191,7 +228,7 @@
               интересов двух сторон
             </h3>
             <div class="reason__item-content">
-              <img src="./img/arrows.png" alt="" class="reason__item-img" />
+              <img src="./img/arrows.png" alt="Стрелки" class="reason__item-img" />
               <p class="reason__item-text">
                 Защищаем<br />права должников<br />и кредиторов
               </p>
@@ -204,44 +241,81 @@
           </h3>
           <div class="reason__input-list">
             <div class="reason__input-box">
-              <img
-                src="./img/icons/form/name.png"
-                alt=""
+              <input placeholder="Ваше имя" type="text" class="reason__input" data-type="name" />
+              <svg
                 class="reason__input-icon"
-              /><input
-                placeholder="Ваше имя"
-                type="text"
-                class="reason__input"
-              />
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 20C4 17 8 17 10 15C11 14 8 14 8 9C8 5.667 9.333 4 12 4C14.667 4 16 5.667 16 9C16 14 13 14 14 15C16 17 20 17 20 20"
+                  stroke="white"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div data-error-label="name" class="form__error-text invisible"></div>
             </div>
             <div class="reason__input-box">
-              <img
-                src="./img/icons/form/phone.png"
-                alt=""
-                class="reason__input-icon"
-              /><input
+              <input
                 placeholder="Ваш телефон"
                 type="text"
                 class="reason__input"
+                data-type="phone"
               />
+              <svg
+                class="reason__input-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.7408 18.4036L15.3055 15.8389C15.6481 15.4963 16.1871 15.4486 16.5846 15.7258L20.1353 18.2023C20.6459 18.5584 20.7106 19.2894 20.2704 19.7296L19.8841 20.1159C19.1739 20.8261 18.1547 21.1338 17.1986 20.826C15.1336 20.1613 11.3767 18.6179 8.26175 15.503C5.14678 12.388 3.6034 8.63109 2.93871 6.56614C2.63093 5.61 2.93859 4.59085 3.64885 3.88059L4.03512 3.49432C4.47529 3.05415 5.20634 3.11879 5.56244 3.62937L8.03888 7.18011C8.3161 7.57758 8.26844 8.11661 7.92578 8.45927L5.36113 11.0239"
+                  stroke="white"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div data-error-label="phone" class="form__error-text invisible"></div>
             </div>
             <div class="reason__input-box">
-              <img
-                src="./img/icons/form/envelope.png"
-                alt=""
-                class="reason__input-icon reason__input-icon_envelope"
-              /><input
+              <input
                 placeholder="Ваш e-mail"
                 type="text"
                 class="reason__input"
+                data-type="email"
               />
+              <svg
+                class="reason__input-icon reason__input-icon_envelope"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 6L12 14L21 6" stroke="white" />
+                <rect
+                  x="2"
+                  y="5"
+                  width="20"
+                  height="14"
+                  rx="3"
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div data-error-label="email" class="form__error-text invisible">- Неверное мыло</div>
             </div>
           </div>
           <div class="reason__btn-box">
             <button class="reason__btn">Получить документацию</button
             ><img
               src="./img/icons/file/pdf-file.png"
-              alt=""
+              alt="Файл"
               class="reason__file-img"
             />
           </div>
@@ -261,7 +335,7 @@
             <span>увеличилось в два раза</span> за 2020 год
           </h2>
           <div class="stats__content">
-            <img src="./img/yandex.jpg" alt="" class="stats__yandex-img" />
+            <img src="./img/yandex.png" alt="Страница" class="stats__yandex-img" />
             <div class="stats__text-box">
               <p class="stats__text">
                 По данным <b>Яндекс.Вордстат</b> за последний год количество
@@ -278,20 +352,29 @@
               </p>
             </div>
           </div>
-          <img class="stats__stamp-img" src="./img/stamp.png" alt="" />
+          <img class="stats__stamp-img" src="./img/stamp.png" alt="Штамп" />
         </div>
       </section>
       <section class="calc">
-        <div class="container">
-          <h2 class="calc__title">Рассчитайте <span>ежемесячную прибыль</span> на процедурах банкротства</h2>
+        <div class="container container_calc">
+          <h2 class="calc__title">
+            Рассчитайте <span>ежемесячную прибыль</span> на процедурах
+            банкротства
+          </h2>
           <div class="calc__content">
             <div class="calc__calc-box">
               <h3 class="calc__range-title">Средний чек</h3>
               <div class="calc__range-box">
-                <div class="calc__range-wrapper"><input type="range" min="150000"
-                  max="200000"
-                  step="10000" class="calc__range"></div>
-                
+                <div class="calc__range-wrapper">
+                  <input
+                    type="range"
+                    min="150000"
+                    max="200000"
+                    step="10000"
+                    class="calc__range calc__range_check"
+                  />
+                </div>
+
                 <div class="calc__dots">
                   <div class="calc__dot"></div>
                   <div class="calc__dot"></div>
@@ -309,12 +392,20 @@
                 <p class="calc__caption">190000</p>
                 <p class="calc__caption">200000</p>
               </div>
-              <h3 class="calc__range-title">Средний чек</h3>
+              <h3 class="calc__range-title">
+                Количество дел по банкротству физ.лиц
+              </h3>
               <div class="calc__range-box">
-                <div class="calc__range-wrapper"><input type="range" min="7"
-                  max="25"
-                  step="3" class="calc__range"></div>
-                
+                <div class="calc__range-wrapper">
+                  <input
+                    type="range"
+                    min="7"
+                    max="25"
+                    step="3"
+                    class="calc__range calc__range_case"
+                  />
+                </div>
+
                 <div class="calc__dots">
                   <div class="calc__dot"></div>
                   <div class="calc__dot"></div>
@@ -334,52 +425,95 @@
                 <p class="calc__caption">22</p>
                 <p class="calc__caption">25</p>
               </div>
-              <p class="calc__text">7 - минимальное количество договоров которое может делать франчайзи при работе с одним сотрудником. Чем больше сотрудников, тем больше прибыль.
+              <p class="calc__text">
+                7 - минимальное количество договоров которое может делать
+                франчайзи при работе с одним сотрудником. Чем больше
+                сотрудников, тем больше прибыль.
               </p>
-              <p class="calc__result">Чистая прибыль <span>1 000 000 ₽</span></p>
+              <p class="calc__result">
+                Чистая прибыль <br />
+                <span class="calc__result-number"></span>
+              </p>
               <button class="calc__btn">Рассчитайте</button>
             </div>
-            <form action="" class="form">
+            <form action="" class="form form_calc">
               <h3 class="form__title">
-                Получить финансовую модель 
-для вашего города с выходом на прибыль Х 
+                Получить финансовую модель для вашего города с выходом на
+                прибыль <span class="calc__result-number"></span>
               </h3>
               <div class="form__input-box">
-                <img
-                  src="./img/icons/form/name.png"
-                  alt=""
-                  class="form__icon"
-                /><input placeholder="Ваше имя" type="text" class="form__input" />
-              </div>
-              <div class="form__input-box">
-                <img
-                  src="./img/icons/form/phone.png"
-                  alt=""
-                  class="form__icon"
-                /><input
-                  placeholder="Ваш телефон"
-                  type="text"
-                  class="form__input"
+              <input placeholder="Ваше имя" type="text" class="form__input" data-type="name" />
+              <svg
+                class="form__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 17C1 14 5 14 7 12C8 11 5 11 5 6C5 2.667 6.333 1 9 1C11.667 1 13 2.667 13 6C13 11 10 11 11 12C13 14 17 14 17 17"
+                  stroke="#768487"
+                  stroke-linecap="round"
                 />
-              </div>
-              <div class="form__input-box">
-                <img
-                  src="./img/icons/form/envelope.png"
-                  alt=""
-                  class="form__icon form__icon_envelope"
-                /><input
-                  placeholder="Ваш e-mail"
-                  type="text"
-                  class="form__input"
+              </svg>
+              <div data-error-label="name" class="form__error-text invisible"></div>
+            </div>
+            <div class="form__input-box">
+              <input
+                placeholder="Ваш телефон"
+                type="text"
+                class="form__input"
+                data-type="phone"
+              />
+              <svg
+                class="form__icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.7408 16.4036L13.3055 13.8389C13.6481 13.4963 14.1871 13.4486 14.5846 13.7258L18.1353 16.2023C18.6459 16.5584 18.7106 17.2894 18.2704 17.7296L17.8841 18.1159C17.1739 18.8261 16.1547 19.1338 15.1986 18.826C13.1336 18.1613 9.37672 16.6179 6.26175 13.503C3.14678 10.388 1.6034 6.63109 0.938706 4.56614C0.630928 3.61 0.938591 2.59085 1.64885 1.88059L2.03512 1.49432C2.47529 1.05415 3.20634 1.11879 3.56244 1.62937L6.03888 5.18011C6.3161 5.57758 6.26844 6.11661 5.92578 6.45927L3.36113 9.02392"
+                  stroke="#768487"
+                  stroke-linecap="round"
                 />
-              </div>
+              </svg>
+              <div data-error-label="phone" class="form__error-text invisible"></div>
+            </div>
+            <div class="form__input-box">
+              <input placeholder="Ваш e-mail" type="text" class="form__input" data-type="email" />
+              <svg
+                class="form__icon form__icon_envelope"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 6L12 14L21 6" stroke="#768487" />
+                <rect
+                  x="2"
+                  y="5"
+                  width="20"
+                  height="14"
+                  rx="3"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div data-error-label="email" class="form__error-text invisible">- Неверное мыло</div>
+            </div>
               <div class="form__btn-box">
                 <button class="form__btn">Получить документацию</button
-                ><img src="./img/icons/file/pdf-file.png" alt="" />
+                ><img src="./img/icons/file/xls-file.png" alt="Файл" />
               </div>
               <p class="form__text">
                 Нажимая на кнопку, Вы даете согласие на обработку персональных
-                данных и соглашаетесь с <span>политикой конфиденциальности</span>
+                данных и соглашаетесь с
+                <span class="policy">политикой конфиденциальности</span>
               </p>
             </form>
           </div>
@@ -387,21 +521,42 @@
       </section>
       <section class="history">
         <div class="container">
-          <h2 class="history__title"><span>Как появилось</span> агентство по защите 
-            прав населения «Баланс Эксперт»</h2>
+          <h2 class="history__title">
+            <span>Как появилось</span> агентство по защите прав населения
+            «Баланс Эксперт»
+          </h2>
           <div class="history__content">
             <div class="history__photo-box">
-              <img src="./img/owner.jpg" alt="" class="history__owner">
-              <p class="history__img-caption"><b>Галина Дмитриевна Мелега</b> <br>
-                основатель агентства</p>
+              <img src="./img/owner.png" alt="Основатель" class="history__owner" />
+              <p class="history__img-caption">
+                <b>Галина Дмитриевна Мелега</b> <br />
+                основатель агентства
+              </p>
               <div class="history__back-card"></div>
             </div>
             <div class="history__text-box">
-              <img src="./img/quotes.png" alt="" class="history__quotes history__quotes_top"><img src="./img/quotes.png" alt="" class="history__quotes history__quotes_bottom">
-              <p class="history__text">Моя карьера началась на госслужбе. Именно здесь я узнала, что многие сталкиваются с неправомерными действиями коллекторов из-за взысканий долгов. Чтобы оберегать людей от этой проблемы, я открыла одно из первых в России агентств по защите прав юридических и физических лиц, а опыт в юриспруденции и экономике стали базой для запуска уникального бизнеса.
-                
-                </p>
-              <p class="history__text">Наше агентство формирует честные взаимоотношения между сторонами должника и кредитора, чтобы каждый вышел с минимальными затратами сил и финансов.</p>
+              <img
+                src="./img/quotes.png"
+                alt="Кавычки"
+                class="history__quotes history__quotes_top"
+              /><img
+                src="./img/quotes.png"
+                alt="Кавычки"
+                class="history__quotes history__quotes_bottom"
+              />
+              <p class="history__text">
+                Моя карьера началась на госслужбе. Именно здесь я узнала, что
+                многие сталкиваются с неправомерными действиями коллекторов
+                из-за взысканий долгов. Чтобы оберегать людей от этой проблемы,
+                я открыла одно из первых в России агентств по защите прав
+                юридических и физических лиц, а опыт в юриспруденции и экономике
+                стали базой для запуска уникального бизнеса.
+              </p>
+              <p class="history__text">
+                Наше агентство формирует честные взаимоотношения между сторонами
+                должника и кредитора, чтобы каждый вышел с минимальными
+                затратами сил и финансов.
+              </p>
             </div>
           </div>
         </div>
@@ -422,59 +577,147 @@
           </div>
           <div class="trust__item">
             <p class="trust__number trust__number_pink">370</p>
-            <p class="trust__text">закрытых дел <br>
-              за 2019 год</p>
+            <p class="trust__text">
+              закрытых дел <br />
+              за 2019 год
+            </p>
           </div>
           <div class="trust__item">
             <p class="trust__number trust__number_green">18</p>
-            <p class="trust__text">регионов-партнеров <br>
-              и 2 точки по России</p>
+            <p class="trust__text">
+              регионов-партнеров <br />
+              и 2 точки по России
+            </p>
           </div>
         </div>
         <div class="trust__form">
-          <img src="./img/question.png" alt="" class="trust__img">
+          <img src="./img/question.png" alt="Вопрос" class="trust__img" />
           <form action="" class="form">
             <h3 class="form__title">
-              Оставьте заявку на презентацию франшизы и финансовую модель
+              Оставьте заявку <br />
+              на презентацию франшизы
             </h3>
             <div class="form__input-box">
-              <img
-                src="./img/icons/form/name.png"
-                alt=""
+              <input placeholder="Ваше имя" type="text" class="form__input" data-type="name" />
+              <svg
                 class="form__icon"
-              /><input placeholder="Ваше имя" type="text" class="form__input" />
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 17C1 14 5 14 7 12C8 11 5 11 5 6C5 2.667 6.333 1 9 1C11.667 1 13 2.667 13 6C13 11 10 11 11 12C13 14 17 14 17 17"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div data-error-label="name" class="form__error-text invisible"></div>
             </div>
             <div class="form__input-box">
-              <img
-                src="./img/icons/form/phone.png"
-                alt=""
-                class="form__icon"
-              /><input
+              <input
                 placeholder="Ваш телефон"
                 type="text"
                 class="form__input"
+                data-type="phone"
               />
+              <svg
+                class="form__icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.7408 16.4036L13.3055 13.8389C13.6481 13.4963 14.1871 13.4486 14.5846 13.7258L18.1353 16.2023C18.6459 16.5584 18.7106 17.2894 18.2704 17.7296L17.8841 18.1159C17.1739 18.8261 16.1547 19.1338 15.1986 18.826C13.1336 18.1613 9.37672 16.6179 6.26175 13.503C3.14678 10.388 1.6034 6.63109 0.938706 4.56614C0.630928 3.61 0.938591 2.59085 1.64885 1.88059L2.03512 1.49432C2.47529 1.05415 3.20634 1.11879 3.56244 1.62937L6.03888 5.18011C6.3161 5.57758 6.26844 6.11661 5.92578 6.45927L3.36113 9.02392"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div data-error-label="phone" class="form__error-text invisible"></div>
             </div>
             <div class="form__input-box">
-              <img
-                src="./img/icons/form/envelope.png"
-                alt=""
+              <input placeholder="Ваш e-mail" type="text" class="form__input" data-type="email" />
+              <svg
                 class="form__icon form__icon_envelope"
-              /><input
-                placeholder="Ваш e-mail"
-                type="text"
-                class="form__input"
-              />
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 6L12 14L21 6" stroke="#768487" />
+                <rect
+                  x="2"
+                  y="5"
+                  width="20"
+                  height="14"
+                  rx="3"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div data-error-label="email" class="form__error-text invisible">- Неверное мыло</div>
             </div>
             <div class="form__btn-box">
               <button class="form__btn">Получить документацию</button
-              ><img src="./img/icons/file/pdf-file.png" alt="" />
+              ><img src="./img/icons/file/xls-file.png" alt="Файл" />
             </div>
             <p class="form__text">
               Нажимая на кнопку, Вы даете согласие на обработку персональных
-              данных и соглашаетесь с <span>политикой конфиденциальности</span>
+              данных и соглашаетесь с
+              <span class="policy">политикой конфиденциальности</span>
             </p>
           </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="container">
+        <h2 class="slider__title">
+          В Вашем офисе клиенты будут <br />
+          чувствовать себя <span>комфортно и в безопасности</span>
+        </h2>
+        <div class="slider__wrapper">
+          <button class="slider__prev">
+            <svg
+              width="12"
+              height="22"
+              viewBox="0 0 12 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11 1L1.70711 10.2929C1.31658 10.6834 1.31658 11.3166 1.70711 11.7071L11 21"
+                stroke="#323648"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <button class="slider__next">
+            <svg
+              width="12"
+              height="22"
+              viewBox="0 0 12 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L10.2929 10.2929C10.6834 10.6834 10.6834 11.3166 10.2929 11.7071L1 21"
+                stroke="#323648"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="slider__container"></div>
         </div>
       </div>
     </section>
@@ -482,32 +725,1331 @@
     <section class="income">
       <div class="container">
         <h2 class="income__title">Как вы будете <span>зарабатывать</span></h2>
-        <p class="income__text">Вы получаете оплату сразу после привлечения клиентов. После подписания договора Головная компания начинает Арбитражный процесс.</p>
+        <p class="income__text">
+          Вы получаете оплату сразу после привлечения клиентов. После подписания
+          договора Головная компания начинает Арбитражный процесс.
+        </p>
         <div class="income__list">
+          <img
+            src="./img/bgs/methods-line-bg.png"
+            alt="Линия"
+            class="income__line-bg"
+          />
           <div class="income__item">
-            <div class="income__icon-box"><img src="./img/icons/profits/cart.png" alt="" class="income__icon"></div>
-            <div class="income__item-content">
-              <img src="./img/sign.png" alt="" class="income__item-img">
-              <p class="income__item-text">Продажа услуги</p>
+            <div class="income__icon-box">
+              <img
+                src="./img/icons/profits/cart.png"
+                alt="Корзина"
+                class="income__icon"
+              />
+            </div>
+            <div class="income__item-content income__item-content_left">
+              <img src="./img/sign.png" alt="Подпись" class="income__item-img" />
+              <p class="income__item-text income__item-text_left">
+                Продажа <br />
+                услуги
+              </p>
             </div>
           </div>
           <div class="income__item">
-            <div class="income__icon-box"><img src="./img/icons/profits/sticker.png" alt="" class="income__icon"></div>
+            <div class="income__icon-box income__icon-box_pink">
+              <img
+                src="./img/icons/profits/sticker.png"
+                alt="Стикер"
+                class="income__icon"
+              />
+            </div>
             <div class="income__item-content">
-              <p class="income__item-text">Подача заявления
-                о банкротстве в Арбитражный суд вашего региона</p>
+              <p class="income__item-text income__item-text_center">
+                Подача заявления о банкротстве в Арбитражный суд вашего региона
+              </p>
             </div>
           </div>
           <div class="income__item">
-            <div class="income__icon-box"><img src="./img/icons/profits/support.png" alt="" class="income__icon"></div>
-            <div class="income__item-content">
-              <p class="income__item-text">Заключение
-                договора</p>
-              <img src="./img/docs.png" alt="" class="income__item-img">
+            <div class="income__icon-box income__icon-box_green">
+              <img
+                src="./img/icons/profits/support.png"
+                alt="Поддержка"
+                class="income__icon"
+              />
+            </div>
+            <div class="income__item-content income__item-content_right">
+              <p class="income__item-text income__item-text_right">
+                Заключение <br />
+                договора
+              </p>
+              <img src="./img/docs.png" alt="Документы" class="income__item-img" />
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="circle">
+      <div class="container">
+        <div class="circle__wrapper">
+          <div class="circle__left-caption-box">
+            <div class="circle__caption">
+              <p class="circle__text">
+                Средняя ежемесячная прибыль <br />
+                <span>470 000 ₽</span>
+              </p>
+              <div class="circle__dash"></div>
+            </div>
+            <div class="circle__caption">
+              <p class="circle__text">
+                Рентабельность <br />чистой прибыли <br />
+                <span>52 %</span>
+              </p>
+              <div class="circle__dash"></div>
+            </div>
+            <div class="circle__caption">
+              <p class="circle__text">
+                Окупаемость <br />
+                <span>7 месяцев</span>
+              </p>
+              <div class="circle__dash"></div>
+            </div>
+          </div>
+          <div class="circle__center">
+            <h3 class="circle__title">
+              Средняя прибыль <br />
+              <span>в первый год</span> <br />
+              <span class="circle__title_bold">6 000 000 ₽</span>
+            </h3>
+          </div>
+          <div class="circle__right-caption-box">
+            <div class="circle__caption">
+              <div class="circle__dash"></div>
+              <p class="circle__text">
+                Средний чек <br />
+                <span>150 000 ₽</span>
+              </p>
+            </div>
+            <div class="circle__caption">
+              <div class="circle__dash"></div>
+              <p class="circle__text">
+                Среднее количество <br />договоров в месяц <br />
+                <span>10</span>
+              </p>
+            </div>
+            <div class="circle__caption">
+              <div class="circle__dash"></div>
+              <p class="circle__text">
+                Средняя ежемесячная выручка <br />
+                <span>900 000 ₽</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="manager">
+      <div class="container">
+        <div class="history__content">
+          <div class="history__photo-box">
+            <img src="./img/manager.png" alt="Руководитель" class="history__owner" />
+            <p class="history__img-caption">
+              <b>Роман Козлов</b> <br />
+              руководитель отдела продаж
+            </p>
+            <div class="manager__back-card"></div>
+          </div>
+          <div class="history__text-box">
+            <img
+              src="./img/quotes.png"
+              alt="Кавычки"
+              class="history__quotes history__quotes_top"
+            /><img
+              src="./img/quotes.png"
+              alt="Кавычки"
+              class="history__quotes history__quotes_bottom"
+            />
+            <p class="history__text">
+              Занимайтесь только тем процессом, который приносит деньги.
+              Головная компания берет на себя самый сложный этап - ведение
+              арбитражного процесса.
+            </p>
+
+            <p class="history__text">
+              Не обязательно быть юристом, не обязательно иметь юриста в штате.
+              На обучении Вы получите все необходимые знания о процессе работы и
+              доступ к файлохранилищу компании. У вас будет 3 штатные единицы,
+              поток заявок и поддержка с стороны Головной компании по всем
+              вопросам.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <h2 class="contact__title">
+          Получите полную финансовую модель
+          <span>с прибыльностью бизнеса 250 000 ₽</span> в месяц
+        </h2>
+        <div class="contact__content">
+          <img src="./img/phone.png" alt="Телефон" class="contact__phone-img" />
+          <form action="" class="form">
+            <h3 class="form__title">
+              Оставьте заявку <br />
+              на презентацию франшизы
+            </h3>
+            <div class="form__input-box">
+              <input placeholder="Ваше имя" type="text" class="form__input" data-type="name" />
+              <svg
+                class="form__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 17C1 14 5 14 7 12C8 11 5 11 5 6C5 2.667 6.333 1 9 1C11.667 1 13 2.667 13 6C13 11 10 11 11 12C13 14 17 14 17 17"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div data-error-label="name" class="form__error-text invisible"></div>
+            </div>
+            <div class="form__input-box">
+              <input
+                placeholder="Ваш телефон"
+                type="text"
+                class="form__input"
+                data-type="phone"
+              />
+              <svg
+                class="form__icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.7408 16.4036L13.3055 13.8389C13.6481 13.4963 14.1871 13.4486 14.5846 13.7258L18.1353 16.2023C18.6459 16.5584 18.7106 17.2894 18.2704 17.7296L17.8841 18.1159C17.1739 18.8261 16.1547 19.1338 15.1986 18.826C13.1336 18.1613 9.37672 16.6179 6.26175 13.503C3.14678 10.388 1.6034 6.63109 0.938706 4.56614C0.630928 3.61 0.938591 2.59085 1.64885 1.88059L2.03512 1.49432C2.47529 1.05415 3.20634 1.11879 3.56244 1.62937L6.03888 5.18011C6.3161 5.57758 6.26844 6.11661 5.92578 6.45927L3.36113 9.02392"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div data-error-label="phone" class="form__error-text invisible"></div>
+            </div>
+            <div class="form__input-box">
+              <input placeholder="Ваш e-mail" type="text" class="form__input" data-type="email" />
+              <svg
+                class="form__icon form__icon_envelope"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 6L12 14L21 6" stroke="#768487" />
+                <rect
+                  x="2"
+                  y="5"
+                  width="20"
+                  height="14"
+                  rx="3"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div data-error-label="email" class="form__error-text invisible">- Неверное мыло</div>
+            </div>
+            <div class="form__btn-box">
+              <button class="form__btn">Получить документацию</button
+              ><img src="./img/icons/file/xls-file.png" alt="Файл" />
+            </div>
+            <p class="form__text">
+              Нажимая на кнопку, Вы даете согласие на обработку персональных
+              данных и соглашаетесь с
+              <span class="policy">политикой конфиденциальности</span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="model">
+      <div class="container">
+        <h2 class="model__title">
+          Готовая модель бизнеса <br />
+          <span>с поддержкой</span> на всех этапах сотрудничества
+        </h2>
+        <div class="model__first-list">
+          <div class="model__first-list-item">
+            <div class="model__first-list-item-title-box">
+              <img
+                src="./img/gavel.png"
+                alt="Молоток"
+                class="model__first-list-item-img"
+              />
+              <h3 class="model__first-list-item-title">
+                Арбитражное <br />
+                управление <br />
+                проектами
+              </h3>
+            </div>
+            <p class="model__first-list-item-text">
+              Вы получаете деньги сразу после продажи и каждый месяц в течении
+              периода рассрочки. Головная компания берет на себя арбитражное
+              управление по каждому проекту.
+            </p>
+          </div>
+          <div class="model__first-list-item">
+            <div class="model__first-list-item-title-box">
+              <img
+                src="./img/chats.png"
+                alt="Разговор"
+                class="model__first-list-item-img"
+              />
+              <h3 class="model__first-list-item-title">
+                Консультируем <br />
+                по вопросам ведения <br />
+                бизнеса
+              </h3>
+            </div>
+            <p class="model__first-list-item-text">
+              Минимум раз в неделю проводим вебинар по продукту или по ведению
+              бизнеса в групповом формате. Отдельный для руководства и отдельно
+              для сотрудников. Эти летучки проводятся для всех франчайзи.
+            </p>
+          </div>
+          <div class="model__first-list-item">
+            <div class="model__first-list-item-title-box">
+              <h3 class="model__first-list-item-title">
+                Помогаем <br />
+                в создании <br />
+                маркетинг-<br />
+                стратегии
+              </h3>
+            </div>
+            <p class="model__first-list-item-text">
+              В каждом городе эффективно работают разные каналы привлечения. Мы
+              поможем составить пошаговый план действий для достижения целевой
+              выручки.
+            </p>
+          </div>
+        </div>
+        <div class="model__second-list">
+          <div class="model__second-list-item">
+            <div class="model__second-list-item-title-box">
+              <h3 class="model__second-list-item-title">
+                Проводим обучение <br />
+                и стажировки
+              </h3>
+            </div>
+            <p class="model__second-list-item-text">
+              Обучение проводится онлайн и офлайн и затрагивает продукт
+              компании, продажи и юридическую часть бизнеса. База знаний
+              содержит шаблоны всех необходимых документов, видео по
+              использованию электронной системой и записи живого обучения от
+              наших специалистов.
+            </p>
+          </div>
+          <div class="model__second-list-item">
+            <div class="model__second-list-item-title-box">
+              <img
+                src="./img/target.png"
+                alt="Цель"
+                class="model__second-list-item-img"
+              />
+              <h3 class="model__second-list-item-title">
+                Настраиваем <br />
+                поток клиентов
+              </h3>
+            </div>
+            <p class="model__second-list-item-text">
+              В каждом франчайзинговом пакете по лицензионному договору мы
+              передаём в работу 100 заявок от потенциальных клиентов.
+            </p>
+            <p class="model__second-list-item-text">
+              Мы будем предоставлять вам заявки каждый день. Ваша задача -
+              правильно их обработать. Узнайте количество заявок по своему
+              городу у нашего менеджера.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="table">
+      <div class="container container_table">
+        <h2 class="table__title">Франчайзинговые <span>пакеты</span></h2>
+        <div class="table__table">
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_grey table__cell_medium table__cell_top-left"
+            >
+              Название пакета
+            </div>
+            <div class="table__cell table__cell_green table__cell_long">
+              «Офис»
+            </div>
+            <div
+              class="table__cell table__cell_pink table__cell_region table__cell_top-right"
+            >
+              «Регион»
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_medium">
+              Зона ответственности <br />для оказания услуг
+            </div>
+            <div class="table__cell table__cell_short">город</div>
+            <div class="table__cell table__cell_short">город</div>
+            <div class="table__cell table__cell_short">город</div>
+            <div class="table__cell table__cell_short">город</div>
+            <div
+              class="table__cell table__cell_region table__cell_shade-pink-light"
+            >
+              регион
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_medium table__cell_grey">
+              Численность города
+            </div>
+            <div class="table__cell table__cell_short table__cell_grey">
+              100 – 250 <br />
+              тыс. чел
+            </div>
+            <div class="table__cell table__cell_short table__cell_grey">
+              250 – 500 <br />
+              тыс. чел
+            </div>
+            <div class="table__cell table__cell_short table__cell_grey">
+              500 – 750 <br />
+              тыс. чел
+            </div>
+            <div class="table__cell table__cell_short table__cell_grey">
+              более 750 <br />
+              тыс. чел
+            </div>
+            <div
+              class="table__cell table__cell_region table__cell_shade-pink-dark"
+            >
+              –
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_medium">Паушальный взнос</div>
+            <div class="table__cell table__cell_short">400 000 ₽</div>
+            <div class="table__cell table__cell_short">500 000 ₽</div>
+            <div class="table__cell table__cell_short">700 000 ₽</div>
+            <div class="table__cell table__cell_short">900 000 ₽</div>
+            <div
+              class="table__cell table__cell_region table__cell_shade-pink-light"
+            >
+              2 000 000 ₽
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_medium table__cell_grey">
+              Роялти
+            </div>
+            <div class="table__cell table__cell_short table__cell_grey">
+              40 000 ₽
+            </div>
+            <div class="table__cell table__cell_short table__cell_grey">
+              40 000 ₽
+            </div>
+            <div class="table__cell table__cell_short table__cell_grey">
+              40 000 ₽
+            </div>
+            <div class="table__cell table__cell_short table__cell_grey">
+              40 000 ₽
+            </div>
+            <div
+              class="table__cell table__cell_region table__cell_shade-pink-dark"
+            >
+              60 000 ₽
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_medium">Количество офисов</div>
+            <div class="table__cell table__cell_short">1</div>
+            <div class="table__cell table__cell_short">1</div>
+            <div class="table__cell table__cell_short">1</div>
+            <div class="table__cell table__cell_short">1</div>
+            <div
+              class="table__cell table__cell_region table__cell_shade-pink-light"
+            >
+              5
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_medium table__cell_grey">
+              Статус Арбитражного <br />
+              управляющего собственника
+            </div>
+            <div class="table__cell table__cell_short table__cell_grey">
+              нет
+            </div>
+            <div class="table__cell table__cell_short table__cell_grey">
+              нет
+            </div>
+            <div class="table__cell table__cell_short table__cell_grey">
+              нет
+            </div>
+            <div class="table__cell table__cell_short table__cell_grey">
+              нет
+            </div>
+            <div
+              class="table__cell table__cell_region table__cell_shade-pink-dark"
+            >
+              да
+            </div>
+          </div>
+          <div class="table__row table__row_last">
+            <div
+              class="table__cell table__cell_medium table__cell_bottom-left"
+            ></div>
+            <div class="table__cell table__cell_short">
+              <button class="table__btn">
+                Получить <br />
+                бизнес план
+              </button>
+            </div>
+            <div class="table__cell table__cell_short">
+              <button class="table__btn">
+                Получить <br />
+                бизнес план
+              </button>
+            </div>
+            <div class="table__cell table__cell_short">
+              <button class="table__btn">
+                Получить <br />
+                бизнес план
+              </button>
+            </div>
+            <div class="table__cell table__cell_short">
+              <button class="table__btn">
+                Получить <br />
+                бизнес план
+              </button>
+            </div>
+            <div
+              class="table__cell table__cell_region table__cell_shade-pink-light table__cell_bottom-right"
+            >
+              <button class="table__btn">
+                Получить <br />
+                бизнес план
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="table__table table__table_mini">
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_grey table__cell_medium table__cell_top-left"
+            >
+              Название пакета
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_green table__cell_long table__cell_top-right"
+            >
+              «Офис»
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Зона ответственности <br />для оказания услуг
+            </div>
+            <div class="table__cell table__cell_mini-table table__cell_short">
+              город
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Численность города
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_grey"
+            >
+              100 – 250 <br />
+              тыс. чел
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Паушальный взнос
+            </div>
+            <div class="table__cell table__cell_mini-table table__cell_short">
+              400 000 ₽
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Роялти
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_grey"
+            >
+              40 000 ₽
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Количество офисов
+            </div>
+            <div class="table__cell table__cell_mini-table table__cell_short">
+              1
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Статус Арбитражного <br />
+              управляющего собственника
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_grey"
+            >
+              нет
+            </div>
+          </div>
+          <div class="table__row table__row_last">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_bottom-left"
+            ></div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_bottom-right"
+            >
+              <button class="table__btn">
+                Получить <br />
+                бизнес план
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="table__table table__table_mini">
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_grey table__cell_medium table__cell_top-left"
+            >
+              Название пакета
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_green table__cell_long table__cell_top-right"
+            >
+              «Офис»
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Зона ответственности <br />для оказания услуг
+            </div>
+            <div class="table__cell table__cell_mini-table table__cell_short">
+              город
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Численность города
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_grey"
+            >
+              250 – 500 <br />
+              тыс. чел
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Паушальный взнос
+            </div>
+            <div class="table__cell table__cell_mini-table table__cell_short">
+              500 000 ₽
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Роялти
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_grey"
+            >
+              40 000 ₽
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Количество офисов
+            </div>
+            <div class="table__cell table__cell_mini-table table__cell_short">
+              1
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Статус Арбитражного <br />
+              управляющего собственника
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_grey"
+            >
+              нет
+            </div>
+          </div>
+          <div class="table__row table__row_last">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_bottom-left"
+            ></div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_bottom-right"
+            >
+              <button class="table__btn">
+                Получить <br />
+                бизнес план
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="table__table table__table_mini">
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_grey table__cell_medium table__cell_top-left"
+            >
+              Название пакета
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_green table__cell_long table__cell_top-right"
+            >
+              «Офис»
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Зона ответственности <br />для оказания услуг
+            </div>
+            <div class="table__cell table__cell_mini-table table__cell_short">
+              город
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Численность города
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_grey"
+            >
+              500 – 750 <br />
+              тыс. чел
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Паушальный взнос
+            </div>
+            <div class="table__cell table__cell_mini-table table__cell_short">
+              700 000 ₽
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Роялти
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_grey"
+            >
+              40 000 ₽
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Количество офисов
+            </div>
+            <div class="table__cell table__cell_mini-table table__cell_short">
+              1
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Статус Арбитражного <br />
+              управляющего собственника
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_grey"
+            >
+              нет
+            </div>
+          </div>
+          <div class="table__row table__row_last">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_bottom-left"
+            ></div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_bottom-right"
+            >
+              <button class="table__btn">
+                Получить <br />
+                бизнес план
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="table__table table__table_mini">
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_grey table__cell_medium table__cell_top-left"
+            >
+              Название пакета
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_green table__cell_long table__cell_top-right"
+            >
+              «Офис»
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Зона ответственности <br />для оказания услуг
+            </div>
+            <div class="table__cell table__cell_mini-table table__cell_short">
+              город
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Численность города
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_grey"
+            >
+              более 750 <br />
+              тыс. чел
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Паушальный взнос
+            </div>
+            <div class="table__cell table__cell_mini-table table__cell_short">
+              900 000 ₽
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Роялти
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_grey"
+            >
+              40 000 ₽
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Количество офисов
+            </div>
+            <div class="table__cell table__cell_mini-table table__cell_short">
+              1
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Статус Арбитражного <br />
+              управляющего собственника
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_grey"
+            >
+              нет
+            </div>
+          </div>
+          <div class="table__row table__row_last">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_bottom-left"
+            ></div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_bottom-right"
+            >
+              <button class="table__btn">
+                Получить <br />
+                бизнес план
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="table__table table__table_mini">
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_grey table__cell_medium table__cell_top-left"
+            >
+              Название пакета
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_pink table__cell_region table__cell_top-right"
+            >
+              «Регион»
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Зона ответственности <br />для оказания услуг
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_shade-pink-light"
+            >
+              город
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Численность города
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_shade-pink-dark"
+            >
+              более 750 <br />
+              тыс. чел
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Паушальный взнос
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_shade-pink-light"
+            >
+              900 000 ₽
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Роялти
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_shade-pink-dark"
+            >
+              40 000 ₽
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_mini-table table__cell_medium">
+              Количество офисов
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_shade-pink-light"
+            >
+              1
+            </div>
+          </div>
+          <div class="table__row">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_grey"
+            >
+              Статус Арбитражного <br />
+              управляющего собственника
+            </div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_shade-pink-dark"
+            >
+              нет
+            </div>
+          </div>
+          <div class="table__row table__row_last">
+            <div
+              class="table__cell table__cell_mini-table table__cell_medium table__cell_bottom-left"
+            ></div>
+            <div
+              class="table__cell table__cell_mini-table table__cell_short table__cell_bottom-right table__cell_shade-pink-light"
+            >
+              <button class="table__btn">
+                Получить <br />
+                бизнес план
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="questions">
+      <div class="container">
+        <div class="questions__wrapper">
+          <img src="./img/lamp.png" alt="Лампочка" class="questions__lamp-img" />
+          <div class="questions__content">
+            <h2 class="questions__title">
+              Эти 5 вопросов <br />
+              <span>задают 85% франчайзи</span>
+            </h2>
+            <div class="questions__list">
+              <div class="questions__item">
+                <div class="questions__arrow">
+                  <svg
+                    width="8"
+                    height="13"
+                    viewBox="0 0 8 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 11.5L6 6.5L1 1.5"
+                      stroke="#323648"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div class="questions__question-box">
+                  <h3 class="questions__question">
+                    Нужно ли мне быть юристом чтобы вести этот бизнес?
+                  </h3>
+                  <p class="questions__answer">
+                    Юридическое образование будет преимуществом, но это не
+                    обязательно. Самую сложную часть работы, Арбитражный
+                    процесс, берет на себя головная компания. Подробное обучение
+                    вместе с внушительным файлохранилищем сделают Ваших
+                    сотрудников способными решить любую возникшую задачу.
+                  </p>
+                </div>
+              </div>
+              <div class="questions__item">
+                <div class="questions__arrow">
+                  <svg
+                    width="8"
+                    height="13"
+                    viewBox="0 0 8 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 11.5L6 6.5L1 1.5"
+                      stroke="#323648"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div class="questions__question-box">
+                  <h3 class="questions__question">
+                    Когда обучение закончится - смогу ли я обращаться за
+                    консультацией в головную компанию?
+                  </h3>
+                  <p class="questions__answer">
+                    Да. Мы проводим еженедельные вебинары для всех франчайзи.
+                    Кроме того у нас организованы чаты: с головной компанией,
+                    между франчайзи, с вашей командой и т.д. Это большое живое
+                    сообщество в котором вы сможете получать ответы и делиться
+                    опытом.
+                  </p>
+                </div>
+              </div>
+              <div class="questions__item">
+                <div class="questions__arrow">
+                  <svg
+                    width="8"
+                    height="13"
+                    viewBox="0 0 8 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 11.5L6 6.5L1 1.5"
+                      stroke="#323648"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div class="questions__question-box">
+                  <h3 class="questions__question">
+                    У меня нет большого опыта именно в этом бизнесе. Подойдет ли
+                    мне такая бизнес модель?
+                  </h3>
+                  <p class="questions__answer">
+                    Да. К счастью для работы в этой сфере не нужен большой штат
+                    сотрудников и сложные бизнес-процессы. Часть обучения мы
+                    выделяем специально под вопросы о ведении бизнеса: найм и
+                    управление персоналом, обучение продукту, обучение работе с
+                    документами. Каждый новый франчайзи обогащает компанию новым
+                    опытом - все подобные вопросы решались и успешно решаются
+                    нашей общей командой прямо сейчас.
+                  </p>
+                </div>
+              </div>
+              <div class="questions__item">
+                <div class="questions__arrow">
+                  <svg
+                    width="8"
+                    height="13"
+                    viewBox="0 0 8 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 11.5L6 6.5L1 1.5"
+                      stroke="#323648"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div class="questions__question-box">
+                  <h3 class="questions__question">
+                    Я нахожусь с небольшом городе, у меня точно будет поток
+                    заявок?
+                  </h3>
+                  <p class="questions__answer">
+                    Конечно, в разных городах разное количество потенциальных
+                    клиентов. Именно поэтому мы помогаем корректировать
+                    маркетинговую стратегию именно под ваш город. Вы можете
+                    брать заявки непостредственно у головной компании или
+                    закупать заявки у сторонних подрядчиков. Более того, в
+                    договоре закреплено обязательство передать вам 100 заявок от
+                    потенциальных клиентов.
+                  </p>
+                </div>
+              </div>
+              <div class="questions__item">
+                <div class="questions__arrow">
+                  <svg
+                    width="8"
+                    height="13"
+                    viewBox="0 0 8 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 11.5L6 6.5L1 1.5"
+                      stroke="#323648"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+                <div class="questions__question-box">
+                  <h3 class="questions__question">
+                    Могу ли я иметь больше чем 1 точку?
+                  </h3>
+                  <p class="questions__answer">
+                    Да, такой вариант может быть. Оставьте заявку и наш
+                    специалист обсудит с вами возможность работы более чем в 1
+                    город.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="city">
+      <div class="container">
+        <h2 class="city__title">
+          Проверьте, свободен ли ваш город <span>для работы</span> по франшизе
+        </h2>
+        <div class="city__content">
+          <img src="./img/city.png" alt="Город" class="city__img" />
+          <form action="" class="form">
+            <h3 class="form__title">
+              Оставьте заявку <br />
+              на презентацию франшизы
+            </h3>
+            <div class="form__input-box">
+              <input placeholder="Ваше имя" type="text" class="form__input" data-type="name" />
+              <svg
+                class="form__icon"
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 17C1 14 5 14 7 12C8 11 5 11 5 6C5 2.667 6.333 1 9 1C11.667 1 13 2.667 13 6C13 11 10 11 11 12C13 14 17 14 17 17"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div data-error-label="name" class="form__error-text invisible"></div>
+            </div>
+            <div class="form__input-box">
+              <input
+                placeholder="Ваш телефон"
+                type="text"
+                class="form__input"
+                data-type="phone"
+              />
+              <svg
+                class="form__icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.7408 16.4036L13.3055 13.8389C13.6481 13.4963 14.1871 13.4486 14.5846 13.7258L18.1353 16.2023C18.6459 16.5584 18.7106 17.2894 18.2704 17.7296L17.8841 18.1159C17.1739 18.8261 16.1547 19.1338 15.1986 18.826C13.1336 18.1613 9.37672 16.6179 6.26175 13.503C3.14678 10.388 1.6034 6.63109 0.938706 4.56614C0.630928 3.61 0.938591 2.59085 1.64885 1.88059L2.03512 1.49432C2.47529 1.05415 3.20634 1.11879 3.56244 1.62937L6.03888 5.18011C6.3161 5.57758 6.26844 6.11661 5.92578 6.45927L3.36113 9.02392"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <div data-error-label="phone" class="form__error-text invisible"></div>
+            </div>
+            <div class="form__input-box">
+              <input placeholder="Ваш e-mail" type="text" class="form__input" data-type="email" />
+              <svg
+                class="form__icon form__icon_envelope"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 6L12 14L21 6" stroke="#768487" />
+                <rect
+                  x="2"
+                  y="5"
+                  width="20"
+                  height="14"
+                  rx="3"
+                  stroke="#768487"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <div data-error-label="email" class="form__error-text invisible">- Неверное мыло</div>
+            </div>
+            <div class="form__btn-box">
+              <button class="form__btn">Проверить город</button
+              >
+            </div>
+            <p class="form__text">
+              Нажимая на кнопку, Вы даете согласие на обработку персональных
+              данных и соглашаетесь с
+              <span class="policy">политикой конфиденциальности</span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__first-row">
+          <img src="./img/logo.png" alt="Лого" class="footer__logo" />
+          <div class="footer__address-box">
+            <p class="footer__address">
+              <span>Адрес</span><br />г. Иваново, ул. Степанова, д. 5
+            </p>
+          </div>
+          <div class="footer__contacts">
+            <a class="footer__phone" href="tel:+74999387768">8&nbsp;499-938-77-68</a>
+            <p class="footer__call-order">Заказать обратный звонок</p>
+          </div>
+        </div>
+
+        <div class="footer__second-row">
+          <div class="footer__empty"></div>
+          <p class="footer__policy">Политика конфеденциальности</p>
+          <div class="footer__socials">
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0ZM21.251 9.8433C21.9395 10.0322 22.4816 10.5889 22.6656 11.2957C23 12.5769 23 15.25 23 15.25C23 15.25 23 17.923 22.6656 19.2042C22.4816 19.9111 21.9395 20.4677 21.251 20.6567C20.0034 21 15 21 15 21C15 21 9.99663 21 8.74891 20.6567C8.06045 20.4677 7.51827 19.9111 7.33427 19.2042C7 17.923 7 15.25 7 15.25C7 15.25 7 12.5769 7.33427 11.2957C7.51827 10.5889 8.06045 10.0322 8.74891 9.8433C9.99663 9.49997 15 9.49997 15 9.49997C15 9.49997 20.0034 9.49997 21.251 9.8433Z"
+                fill="#768487"
+              />
+              <path d="M13.5 18V13L17.5 15.5001L13.5 18Z" fill="#768487" />
+            </svg>
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0ZM16.2213 19.7352C16.0734 19.8911 15.7847 19.9226 15.7847 19.9226H14.8284C14.8284 19.9226 12.7186 20.0471 10.86 18.1482C8.83318 16.0765 7.04346 11.966 7.04346 11.966C7.04346 11.966 6.94016 11.6964 7.05207 11.5666C7.17806 11.4199 7.52161 11.4107 7.52161 11.4107L9.80746 11.3961C9.80746 11.3961 10.0227 11.4306 10.1768 11.542C10.3044 11.6342 10.3756 11.8055 10.3756 11.8055C10.3756 11.8055 10.745 12.7227 11.2341 13.5523C12.1896 15.1723 12.6341 15.5264 12.9581 15.3528C13.4307 15.1001 13.2891 13.063 13.2891 13.063C13.2891 13.063 13.2977 12.324 13.0512 11.9945C12.8602 11.7394 12.5003 11.6649 12.3414 11.6442C12.2123 11.6273 12.4236 11.3338 12.6975 11.2025C13.1091 11.0051 13.8353 10.9935 14.6938 11.002C15.3629 11.0089 15.5554 11.0496 15.8167 11.1118C16.4234 11.2555 16.4044 11.716 16.3636 12.7099C16.3513 13.0071 16.3372 13.352 16.3372 13.7505C16.3372 13.84 16.3345 13.9354 16.3318 14.0336C16.3176 14.5428 16.3013 15.1258 16.6431 15.3429C16.8184 15.4535 17.2465 15.359 18.3178 13.5738C18.8257 12.7273 19.206 11.7325 19.206 11.7325C19.206 11.7325 19.2898 11.5551 19.4189 11.479C19.5511 11.4014 19.7296 11.4253 19.7296 11.4253L22.1351 11.4107C22.1351 11.4107 22.8582 11.3254 22.9748 11.6465C23.0977 11.9822 22.7048 12.7672 21.722 14.0531C20.7896 15.2732 20.3359 15.7225 20.3775 16.1198C20.4079 16.4101 20.7029 16.6726 21.2688 17.188C22.4504 18.2647 22.767 18.8313 22.8431 18.9674C22.8494 18.9786 22.8541 18.987 22.8574 18.9924C23.3872 19.855 22.2697 19.9226 22.2697 19.9226L20.1326 19.9518C20.1326 19.9518 19.674 20.0409 19.0699 19.6338C18.7534 19.4207 18.4441 19.0727 18.1496 18.7412C17.6998 18.235 17.2842 17.7673 16.9296 17.8778C16.334 18.0637 16.352 19.3227 16.352 19.3227C16.352 19.3227 16.3567 19.5923 16.2213 19.7352Z"
+                fill="#768487"
+              />
+            </svg>
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0ZM11.702 7.0483C12.5554 7.00946 12.8281 6.99996 15.0007 6.99996H14.9982C17.1716 6.99996 17.4433 7.00946 18.2966 7.0483C19.1483 7.0873 19.73 7.22213 20.24 7.41997C20.7666 7.62413 21.2116 7.89747 21.6566 8.34247C22.1016 8.78715 22.375 9.23348 22.58 9.75966C22.7767 10.2683 22.9117 10.8497 22.9517 11.7013C22.99 12.5547 23 12.8274 23 15C23 17.1727 22.99 17.4447 22.9517 18.2981C22.9117 19.1494 22.7767 19.7309 22.58 20.2398C22.375 20.7658 22.1016 21.2121 21.6566 21.6568C21.2121 22.1018 20.7665 22.3758 20.2405 22.5801C19.7315 22.778 19.1495 22.9128 18.2978 22.9518C17.4444 22.9906 17.1726 23.0001 14.9997 23.0001C12.8272 23.0001 12.5547 22.9906 11.7014 22.9518C10.8499 22.9128 10.2684 22.778 9.75936 22.5801C9.23352 22.3758 8.78718 22.1018 8.34267 21.6568C7.89784 21.2121 7.6245 20.7658 7.42 20.2396C7.22233 19.7309 7.08749 19.1496 7.04833 18.2979C7.00966 17.4446 6.99999 17.1727 6.99999 15C6.99999 12.8274 7.00999 12.5545 7.04816 11.7012C7.08649 10.8498 7.2215 10.2683 7.41983 9.75949C7.62483 9.23348 7.89817 8.78715 8.34317 8.34247C8.78785 7.89764 9.23418 7.6243 9.76036 7.41997C10.269 7.22213 10.8504 7.0873 11.702 7.0483Z"
+                fill="#768487"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M14.283 8.44145C14.4224 8.44124 14.5723 8.4413 14.7341 8.44137L15.0007 8.44145C17.1367 8.44145 17.3899 8.44912 18.2334 8.48745C19.0134 8.52312 19.4368 8.65346 19.7188 8.76296C20.0921 8.90796 20.3583 9.08129 20.6381 9.3613C20.9181 9.6413 21.0915 9.90797 21.2368 10.2813C21.3463 10.563 21.4768 10.9863 21.5123 11.7663C21.5506 12.6097 21.559 12.863 21.559 14.998C21.559 17.133 21.5506 17.3864 21.5123 18.2297C21.4766 19.0097 21.3463 19.4331 21.2368 19.7147C21.0918 20.0881 20.9181 20.3539 20.6381 20.6337C20.3581 20.9137 20.0923 21.0871 19.7188 21.2321C19.4371 21.3421 19.0134 21.4721 18.2334 21.5078C17.3901 21.5461 17.1367 21.5544 15.0007 21.5544C12.8645 21.5544 12.6114 21.5461 11.768 21.5078C10.988 21.4718 10.5647 21.3414 10.2825 21.2319C9.90917 21.0869 9.6425 20.9136 9.3625 20.6336C9.0825 20.3536 8.90916 20.0876 8.76383 19.7141C8.65432 19.4324 8.52382 19.0091 8.48832 18.2291C8.44999 17.3857 8.44232 17.1324 8.44232 14.996C8.44232 12.8597 8.44999 12.6077 8.48832 11.7643C8.52399 10.9843 8.65432 10.561 8.76383 10.279C8.90883 9.90563 9.0825 9.63897 9.3625 9.35896C9.6425 9.07896 9.90917 8.90562 10.2825 8.76029C10.5645 8.65029 10.988 8.52029 11.768 8.48445C12.506 8.45112 12.792 8.44112 14.283 8.43945V8.44145ZM19.2711 9.76979C18.7411 9.76979 18.3111 10.1993 18.3111 10.7295C18.3111 11.2595 18.7411 11.6895 19.2711 11.6895C19.8011 11.6895 20.2311 11.2595 20.2311 10.7295C20.2311 10.1995 19.8011 9.76946 19.2711 9.76946V9.76979ZM10.8924 14.9999C10.8924 12.7311 12.7318 10.8917 15.0006 10.8916C17.2694 10.8916 19.1084 12.7311 19.1084 14.9999C19.1084 17.2688 17.2696 19.1075 15.0007 19.1075C12.7319 19.1075 10.8924 17.2688 10.8924 14.9999Z"
+                fill="#768487"
+              />
+              <path
+                d="M15.0007 12.3335C16.4734 12.3335 17.6674 13.5273 17.6674 15.0002C17.6674 16.4729 16.4734 17.6669 15.0007 17.6669C13.5279 17.6669 12.334 16.4729 12.334 15.0002C12.334 13.5273 13.5279 12.3335 15.0007 12.3335Z"
+                fill="#768487"
+              />
+            </svg>
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0ZM16.5635 15.6589V23.8197H13.1869V15.6592H11.5V12.8469H13.1869V11.1585C13.1869 8.86425 14.1395 7.5 16.8457 7.5H19.0988V10.3126H17.6905C16.637 10.3126 16.5673 10.7056 16.5673 11.4391L16.5635 12.8466H19.1147L18.8162 15.6589H16.5635Z"
+                fill="#768487"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

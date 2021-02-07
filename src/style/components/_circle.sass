@@ -1,0 +1,68 @@
+.circle
+  padding: 38px 0 0 0
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+  &__right-caption-box, &__left-caption-box  
+    display: flex;
+    flex-direction: column;
+    height: 269px;
+    justify-content: space-between;
+  &__right-caption-box
+    .circle__text
+      text-align: left
+      margin-right: 0
+      margin-left: 38px
+    .circle__caption
+      justify-content: flex-start
+      &:first-child, &:last-child
+        position: relative
+        left: -35px
+  &__left-caption-box
+    .circle__caption
+      &:first-child, &:last-child
+        position: relative
+        left: 35px
+  &__text
+    font-size: 14px
+    line-height: 21px
+    color: $grey
+    margin-bottom: 0
+    text-align: right
+    margin-right: 38px
+    span
+      font-size: 18px
+      font-weight: 600
+      color: $green
+  &__dash
+    width: 11px
+    height: 1px
+    background-color: $green
+  &__caption
+    display: flex
+    align-items: center
+    justify-content: flex-end
+  &__center
+    width: 346px
+    height: 346px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 15px
+    @include bg
+    background-image: url("../img/circle.png")
+  &__title
+    font-weight: 600
+    font-size: 26px
+    line-height: 34px
+    text-align: center
+    color: #768487
+    margin-bottom: 0
+    span
+      color: $green
+    &_bold
+      font-weight: bold
+      font-size: 40px
+      display: inline-block
+      margin-top: 10px

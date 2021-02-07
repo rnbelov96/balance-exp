@@ -40,11 +40,13 @@
     justify-content: space-between
     align-items: center
     width: 471px
+    pointer-events: none
   &__dot
     width: 6px
     height: 6px
     background: #7A5CBD
     border-radius: 50%
+    pointer-events: none
   &__captions
     display: flex
     justify-content: space-between
@@ -76,6 +78,8 @@
       font-size: 40px
       line-height: 48px
       color: #7A5CBD
+    br
+      display: none
   &__btn
     background: linear-gradient(180deg, #FFFFFF 0%, #FFD02C 100%)
     border: 2px solid #FFD02C
@@ -92,6 +96,10 @@
     padding: 18px 0px
     margin: 65px auto 0 auto
     display: block
+    &:hover
+      background: #FFFFFF
+    &:active
+      background: #FFD02C
   &__range
     background: $white
     box-shadow: 1px 3px 14px rgba(50, 54, 72, 0.13)

@@ -1,0 +1,74 @@
+.questions
+  @include bg
+  background-image: url("../img/bgs/questions.png")
+  padding: 128px 0 128px 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &__lamp-img
+    margin-right: 68px
+    position: relative
+    top: 80px
+  &__title
+    font-weight: bold
+    font-size: 40px
+    line-height: 120%
+    color: #323648
+    span
+      color: $pink
+  &__list
+    margin-top: 50px
+  &__item
+    display: flex
+    align-items: flex-start
+    margin-bottom: 25px
+    &_opened
+      .questions__arrow
+        transform: rotate(90deg)
+        svg
+          path
+            stroke: $purple
+      .questions__question-box > h3
+        color: $purple
+      .questions__answer
+        display: block
+    &:hover
+      cursor: pointer
+      .questions__question-box > h3
+        color: $purple
+      svg
+        path
+          stroke: $purple
+  &__arrow
+    margin-right: 19px
+    transition: transform 300ms ease-in-out
+  &__question
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    color: $black
+    margin-bottom: 0
+    &:hover
+      color: $purple
+      cursor: pointer
+    &:actice
+      color: $black
+  &__answer
+    font-size: 14px
+    line-height: 18px
+    color: #323648
+    padding-top: 10px 
+    display: none
+    animation: growDown 300ms ease-in-out forwards
+    transform-origin: top center
+    margin-bottom: 0
+    &:hover
+      cursor: auto
+
+@keyframes growDown 
+    0% 
+        transform: scaleY(0)
+    100% 
+        transform: scaleY(1)
+    

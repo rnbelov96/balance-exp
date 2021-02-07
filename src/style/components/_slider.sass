@@ -1,0 +1,96 @@
+.slider
+  min-height: 980px
+  @include bg
+  background-image: url("../img/bgs/slider-bg.png")
+  padding: 226px 0 182px 0
+  &__title
+    width: 992px
+    margin: 0 auto
+    font-weight: bold
+    font-size: 40px
+    line-height: 48px
+    color: $white
+    text-align: center
+    span
+      color: $pink
+  &__wrapper
+    position: relative
+    margin-top: 20px
+  &__container
+    margin: 0 auto
+    width: 950px
+    height: 520px
+    position: relative
+    overflow-x: hidden
+    user-select: none
+    touch-action: pan-y
+  &__slide-2
+    width: 660px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate3d(-50%, -50%, 0)
+    transition: all 0.7s
+    z-index: 1
+    pointer-events: none
+    filter: drop-shadow(0px 5px 16px #323648)
+    border-radius: 20px
+  &__slide-1
+    position: absolute
+    width: 50%
+    top: 50%
+    transform: translateY(-50%)
+    left: 0
+    transition: all 0.7s
+    z-index: 0
+    pointer-events: none
+    opacity: 0.5
+    border-radius: 20px
+  &__slide-out-left
+    position: absolute
+    width: 50%
+    top: 50%
+    transform: translateY(-50%)
+    left: -50%
+    transition: all 0.7s
+    pointer-events: none
+    opacity: 0.5
+    border-radius: 20px
+  &__slide-3
+    position: absolute
+    width: 50%
+    top: 50%
+    transform: translateY(-50%)
+    left: 50%
+    transition: all 0.7s
+    z-index: 0
+    pointer-events: none
+    opacity: 0.5
+    border-radius: 20px
+  &__slide-out-right
+    position: absolute
+    width: 50%
+    top: 50%
+    transform: translateY(-50%)
+    left: 100%
+    transition: all 0.7s
+    pointer-events: none
+    opacity: 0.5
+    border-radius: 20px
+  &__prev, &__next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 3
+    width: 54px
+    height: 54px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFD02C 100%)
+    border: 2px solid #FFD02C
+    box-sizing: border-box
+    box-shadow: 0px 10px 30px rgba(255, 204, 71, 0.5)
+    border-radius: 30px
+  &__next
+    right: 0

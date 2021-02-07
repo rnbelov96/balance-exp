@@ -1,5 +1,6 @@
 .income
-  margin-top: 80px
+  padding: 80px 0 50px 0
+  overflow-x: hidden
   &__title
     font-weight: bold
     font-size: 40px
@@ -20,6 +21,7 @@
     display: flex
     justify-content: space-between
     margin-top: 133px
+    position: relative
   &__item
     width: 330px
     height: 220px
@@ -35,3 +37,37 @@
     display: flex
     justify-content: center
     align-items: center
+    margin: 0 auto
+    position: relative
+    top: -67px
+    &_pink
+      background-color: $pink
+    &_green
+      background-color: $green
+  &__item-content
+    display: flex
+    justify-content: center
+    align-items: flex-end
+    &_left
+      position: relative
+      top: -29px
+    &_right
+      position: relative
+      top: -52px
+  &__item-text
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    color: $black
+    &_left
+      margin-left: 9px
+    &_right
+      margin-right: 21px
+      text-align: right
+    &_center
+      width: 83%
+      text-align: center
+  &__line-bg
+    position: absolute
+    top: -109px
+    left: -359px

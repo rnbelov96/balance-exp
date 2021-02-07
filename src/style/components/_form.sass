@@ -31,6 +31,20 @@
     border: none
     border-bottom: 1.5px solid $grey
     padding: 4px 10px 10px 56px
+    &:hover, &:focus
+      color: $purple
+      border-bottom-color: $purple
+      &::-webkit-input-placeholder
+        color: $purple
+      &::-moz-placeholder
+        color: $purple
+      &:-ms-input-placeholder
+        color: $purple
+      &:-moz-placeholder
+        color: $purple
+      & + svg
+        path, rect
+          stroke: $purple
     &::-webkit-input-placeholder
       color: $grey
       font-size: 15px
@@ -49,9 +63,10 @@
       line-height: 24px
   &__btn-box
     position: relative
+    width: 285px
     img
       position: absolute
-      right: 6px
+      right: -17px
       top: 4px
   &__btn
     background: linear-gradient(180deg, #FFFFFF 0%, #FFD02C 100%)
@@ -64,9 +79,13 @@
     line-height: 17px
     color: $black
     text-transform: uppercase
-    width: 285px
+    width: 100%
     text-align: center
     padding: 18px 0px
+    &:hover
+      background: #FFFFFF
+    &:active
+      background: #FFD02C
   &__text
     margin-top: 17px
     font-size: 10px
@@ -74,3 +93,10 @@
     text-align: center
     width: 107%
     color: #AEB0BA
+    span
+      cursor: pointer
+      text-decoration: underline
+  &__error-text
+    position: relative
+    top: 5px
+    color: red
