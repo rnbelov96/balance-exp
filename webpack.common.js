@@ -59,11 +59,11 @@ module.exports = {
       filename: 'index.html',
       // favicon: './src/img/icons/1.ico'
     }),
-    // new HtmlWebpackPlugin({
-    //   template: path.resolve(__dirname, './src/thanks.html'),
-    //   filename: 'thanks.html',
-    //   favicon: './src/img/icons/1.ico'
-    // }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/thanks.html'),
+      filename: 'thanks.html',
+      // favicon: './src/img/icons/1.ico'
+    }),
     // new HtmlWebpackPlugin({
     //   template: path.resolve(__dirname, './src/error.html'),
     //   filename: 'error.html',
