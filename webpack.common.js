@@ -64,11 +64,11 @@ module.exports = {
       filename: 'thanks.html',
       // favicon: './src/img/icons/1.ico'
     }),
-    // new HtmlWebpackPlugin({
-    //   template: path.resolve(__dirname, './src/error.html'),
-    //   filename: 'error.html',
-    //   favicon: './src/img/icons/1.ico'
-    // }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/error.html'),
+      filename: 'error.html',
+      // favicon: './src/img/icons/1.ico'
+    }),
     new MiniCssExtractPlugin({
       filename: '[name]-[contenthash].css',
     }),
