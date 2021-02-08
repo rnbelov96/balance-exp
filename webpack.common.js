@@ -57,17 +57,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/index.html'),
       filename: 'index.html',
-      // favicon: './src/img/icons/1.ico'
+      favicon: './src/img/icons/favicon.ico'
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/thanks.html'),
       filename: 'thanks.html',
-      // favicon: './src/img/icons/1.ico'
+      favicon: './src/img/icons/favicon.ico'
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './src/error.html'),
       filename: 'error.html',
-      // favicon: './src/img/icons/1.ico'
+      favicon: './src/img/icons/favicon.ico'
     }),
     new MiniCssExtractPlugin({
       filename: '[name]-[contenthash].css',
