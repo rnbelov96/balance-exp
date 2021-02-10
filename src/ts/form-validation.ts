@@ -10,7 +10,6 @@ const WRONG_EMAIL_CAPTION = '- Неверный e-mail';
 const formsList = document.querySelectorAll('form');
 
 formsList.forEach(form => {
-  console.log(form)
   const nameErrorLabelEl = form.querySelector('[data-error-label="name"]') as HTMLDivElement | null;
   const phoneErrorLabelEl = form.querySelector('[data-error-label="phone"]') as HTMLDivElement;
   const emailErrorLabelEl = form.querySelector('[data-error-label="email"]') as HTMLDivElement;
