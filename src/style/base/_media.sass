@@ -133,7 +133,12 @@
       margin-bottom: 65px
     &__form
       margin-top: 30px
-      justify-content: center
+      flex-direction: column
+      align-items: center
+    &__img-box
+      margin-right: 0
+    &__img-title
+      width: 80%
     &__img
       display: none
   .slider
@@ -159,6 +164,8 @@
       height: 240px
     &__text
       font-size: 10px
+      span
+        font-size: 11px
     &__right-caption-box
       .circle__text
         margin-left: 15px
@@ -273,6 +280,9 @@
     padding-top: 40px
     &__item
       margin-bottom: 80px
+    &__img-title
+      width: 100%
+      font-size: 20px
   .slider
     padding: 157px 0 100px 0
     min-height: 767px
@@ -353,6 +363,8 @@
   .form
     width: 300px
     padding: 26px 15px
+    &__title_city
+      font-size: 16px
     &__text
       width: 100%
     &__btn-box
@@ -418,7 +430,8 @@
       width: 92%
     &__result
       span
-        margin-left: 0;
+        margin-left: 0
+        font-size: 35px
       br
         display: block
     &__btn
