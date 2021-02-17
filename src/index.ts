@@ -6,3 +6,4 @@ import './ts/dropdown';
 import './ts/calc';
 import './ts/form-validation';
 import './ts/modal';
+import './ts/carousel';

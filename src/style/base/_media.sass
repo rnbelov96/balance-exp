@@ -339,6 +339,41 @@
 
 
 @media (max-width: 575px)
+  .carousel
+    width: 100%
+    position: relative
+    &__hider
+      overflow: hidden
+    &__list
+      width: auto
+      margin: 0
+      padding: 0
+      list-style-type: none
+      display: flex
+      justify-content: flex-start
+      flex-wrap: nowrap
+      transition: transform 200ms
+    &__item
+      display: block
+      flex: 0 0 auto
+      width: 290px
+      margin-left: calc((100% - 290px)/ 2)
+      margin-right: calc((100% - 290px)/ 2)
+      text-align: center
+    &__dots
+      width: 100px
+      height: 15px
+      margin: 0 auto
+      display: flex
+      justify-content: space-between
+    &__dot
+      width: 15px
+      height: 15px
+      border-radius: 50%
+      background-color: transparent
+      border: 2px solid $purple
+      &_current
+        background-color: $purple
   .container
     padding: 0 15px
     position: relative
