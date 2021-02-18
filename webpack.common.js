@@ -26,10 +26,6 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.(sass|scss|css)$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
-      },
-      {
         test: /\.(png|jpg|gif|webp|svg)$/,
         use: [
           {
@@ -68,9 +64,6 @@ module.exports = {
       template: path.resolve(__dirname, './src/error.html'),
       filename: 'error.html',
       favicon: './src/img/icons/favicon.ico'
-    }),
-    new MiniCssExtractPlugin({
-      filename: '[name]-[contenthash].css',
     }),
   ],
 }

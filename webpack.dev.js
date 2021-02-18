@@ -19,6 +19,17 @@ module.exports = merge(common, {
 
   mode: 'development',
 
+  target: 'web',
+
+  module: {
+    rules: [
+      {
+        test: /\.(sass|scss|css)$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+    ],
+  },
+
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
   ],
