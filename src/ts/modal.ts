@@ -16,11 +16,10 @@ const openModal = (modalEl: HTMLDivElement) => {
 };
 
 const modalElList = document.querySelectorAll('.modal');
-const [policyModalEl, formModalEl] = modalElList;
-const formModalWrapper = document.querySelector('.modal__form');
+const modalWrapperElList = document.querySelectorAll('.modal__center-wrapper');
 modalElList.forEach(modalEl => {
   modalEl.addEventListener('click', (e: Event) => {
-    if (e.target === e.currentTarget || e.target === formModalWrapper) {
+    if (e.target === e.currentTarget || [...modalWrapperElList].includes(e.target as Element)) {
       const clickedModal = e.currentTarget as HTMLDivElement;
       closeModal(clickedModal);
     }
@@ -35,6 +34,8 @@ closeModalElList.forEach(closeEl => {
     });
   });
 });
+
+const [policyModalEl, formModalEl] = modalElList;
 
 const calcBtnEl = document.querySelector('.calc__btn') as HTMLButtonElement;
 calcBtnEl.addEventListener('click', () => {

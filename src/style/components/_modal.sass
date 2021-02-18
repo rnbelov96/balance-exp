@@ -38,30 +38,17 @@
       background-color: transparent
       box-sizing: border-box
       z-index: 2
-      font: 300 22px / 30px Arial, "HelveticaNeueCyr", sans-serif
+      font: 300 22px / 30px "HelveticaNeueCyr", sans-serif
       border-radius: 50%
       border-width: 0px
       transition: background-color 0.25s ease 0s
-  &__policy
-    position: relative
-    max-width: 650px
-    background-color: white
-    margin: 40px auto
-    padding: 24px 44px
-    font-size: 16px
-    h3
-      text-align: center
-      padding-bottom: 25px
-    p
-      font-weight: bold
-    ul
-      list-style: none
-      padding-left: 25px
-      li
-        padding-bottom: 5px
-  &__form
+  &__center-wrapper
     height: 100%
     text-align: center
+    & > *
+      position: relative
+      display: inline-block
+      vertical-align: middle
     &::before
       display: inline-block
       height: 100%
