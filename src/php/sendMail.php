@@ -11,6 +11,7 @@
     $mail->IsHTML(true);
     $mail->setFrom('site@mysite.ru');
     $mail->addAddress('melega@bk.ru');
+    $mail->addAddress('leads@conversionpro.agency');
     $mail->Subject = 'Новая заявка';
 
     $body .= '<h1>Заявка на сайте франшизы "Баланс Эксперт".</h1>';
