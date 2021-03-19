@@ -4,5 +4,7 @@ import './style/main.sass';
 import './ts/slider';
 import './ts/dropdown';
 import './ts/calc';
-import './ts/form-validation';
+import './ts/setup-form';
+import './ts/f5leads-init';
+import './ts/f5leads';
 import './ts/modal';
